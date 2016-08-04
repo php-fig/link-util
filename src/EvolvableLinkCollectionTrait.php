@@ -2,7 +2,6 @@
 
 namespace Fig\Link;
 
-
 use Psr\Link\LinkInterface;
 use Psr\Link\EvolvableLinkCollectionInterface;
 
@@ -18,7 +17,8 @@ trait EvolvableLinkCollectionTrait
     /**
      * {@inheritdoc}
      */
-    public function withLink(LinkInterface $link) {
+    public function withLink(LinkInterface $link)
+    {
         $that = clone($this);
         $splosh = spl_object_hash($link);
         if (!array_key_exists($splosh, $that->links)) {
@@ -30,7 +30,8 @@ trait EvolvableLinkCollectionTrait
     /**
      * {@inheritdoc}
      */
-    public function withoutLink(LinkInterface $link) {
+    public function withoutLink(LinkInterface $link)
+    {
         $that = clone($this);
         $splosh = spl_object_hash($link);
         unset($that->links[$splosh]);

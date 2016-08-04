@@ -26,15 +26,17 @@ trait LinkCollectionTrait
     /**
      * {@inheritdoc}
      */
-    public function getLinks() {
+    public function getLinks()
+    {
         return $this->links;
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getLinksByRel($rel) {
-        $filter = function(LinkInterface $link) use ($rel) {
+    public function getLinksByRel($rel)
+    {
+        $filter = function (LinkInterface $link) use ($rel) {
             return in_array($rel, $link->getRel());
         };
         return array_filter($this->links, $filter);

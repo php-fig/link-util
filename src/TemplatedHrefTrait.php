@@ -3,7 +3,6 @@
 
 namespace Fig\Link;
 
-
 trait TemplatedHrefTrait
 {
     /**

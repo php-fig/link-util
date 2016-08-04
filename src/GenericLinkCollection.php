@@ -19,7 +19,9 @@ class GenericLinkCollection implements EvolvableLinkCollectionInterface
     public function __construct(array $links = [])
     {
         // This block will throw a type error if any item isn't a LinkInterface, by design.
-        array_filter($links, function(LinkInterface $item) { return true; });
+        array_filter($links, function (LinkInterface $item) {
+            return true;
+        });
 
         $hashes = array_map('spl_object_hash', $links);
         $this->links = array_combine($hashes, $links);

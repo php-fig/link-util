@@ -3,11 +3,11 @@
 
 namespace Fig\Link\Tests;
 
-
 use Fig\Link\GenericLinkCollection;
 use Fig\Link\Link;
 
-class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase {
+class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase
+{
 
     public function test_can_add_links_by_method()
     {
@@ -74,6 +74,4 @@ class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase {
 
         $this->assertFalse(in_array($link, $collection->getLinks()));
     }
-
-
 }

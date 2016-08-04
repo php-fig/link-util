@@ -19,7 +19,8 @@ trait EvolvableLinkTrait
      *
      * @return EvolvableLinkInterface
      */
-    public function withHref($href) {
+    public function withHref($href)
+    {
         /** @var EvolvableLinkInterface $that */
         $that = clone($this);
         $that->href = $href;
@@ -34,7 +35,8 @@ trait EvolvableLinkTrait
      *
      * @return EvolvableLinkInterface
      */
-    public function withRel($rel) {
+    public function withRel($rel)
+    {
         /** @var EvolvableLinkInterface $that */
         $that = clone($this);
         $that->rel[$rel] = true;
@@ -46,7 +48,8 @@ trait EvolvableLinkTrait
      *
      * @return EvolvableLinkInterface
      */
-    public function withoutRel($rel) {
+    public function withoutRel($rel)
+    {
         /** @var EvolvableLinkInterface $that */
         $that = clone($this);
         unset($that->rel[$rel]);
@@ -58,7 +61,8 @@ trait EvolvableLinkTrait
      *
      * @return EvolvableLinkInterface
      */
-    public function withAttribute($attribute, $value) {
+    public function withAttribute($attribute, $value)
+    {
         /** @var EvolvableLinkInterface $that */
         $that = clone($this);
         $that->attributes[$attribute] = $value;
@@ -70,11 +74,11 @@ trait EvolvableLinkTrait
      *
      * @return EvolvableLinkInterface
      */
-    public function withoutAttribute($attribute) {
+    public function withoutAttribute($attribute)
+    {
         /** @var EvolvableLinkInterface $that */
         $that = clone($this);
         unset($that->attributes[$attribute]);
         return $that;
     }
-
 }

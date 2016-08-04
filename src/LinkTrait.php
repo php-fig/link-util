@@ -42,29 +42,32 @@ trait LinkTrait
     /**
      * {@inheritdoc}
      */
-    public function getHref() {
+    public function getHref()
+    {
         return $this->href;
     }
 
     /**
      * {@inheritdoc}
      */
-    public function isTemplated() {
+    public function isTemplated()
+    {
         return $this->hrefIsTemplated($this->href);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getRel() {
+    public function getRel()
+    {
         return array_keys($this->rel);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getAttributes() {
+    public function getAttributes()
+    {
         return $this->attributes;
     }
-
 }

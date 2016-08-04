@@ -2,7 +2,6 @@
 
 namespace Fig\Link\Tests;
 
-
 use Fig\Link\Link;
 
 class LinkTest extends \PHPUnit_Framework_TestCase
@@ -50,7 +49,8 @@ class LinkTest extends \PHPUnit_Framework_TestCase
         $this->assertContains('reference', $link->getRel());
     }
 
-    public function test_constructor() {
+    public function test_constructor()
+    {
         $link = new Link('next', 'http://www.google.com');
 
         $this->assertEquals('http://www.google.com', $link->getHref());
