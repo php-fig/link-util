@@ -3,9 +3,10 @@
 
 namespace Fig\Link;
 
+use Psr\Link\EvolvableLinkInterface;
 
-class Link
+class Link implements EvolvableLinkInterface
 {
-    use LinkTrait;
     use EvolvableLinkTrait;
+
 }

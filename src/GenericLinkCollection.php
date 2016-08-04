@@ -1,11 +1,11 @@
 <?php
 
-
 namespace Fig\Link;
 
+use Psr\Link\EvolvableLinkCollectionInterface;
+use Psr\Link\LinkInterface;
 
-class GenericLinkCollection
+class GenericLinkCollection implements EvolvableLinkCollectionInterface
 {
-    use LinkCollectionTrait;
     use EvolvableLinkCollectionTrait;
 }
