@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.5.0",
         "psr/link": "~1.0@dev"
     },
     "require-dev": {
