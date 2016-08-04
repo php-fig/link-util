@@ -20,13 +20,6 @@ trait LinkTrait
     private $href = '';
 
     /**
-     *
-     *
-     * @var bool
-     */
-    private $templated = false;
-
-    /**
      * The set of rels on this link.
      *
      * Note: Because rels are an exclusive set, we use the keys of the array
@@ -56,7 +49,7 @@ trait LinkTrait
      * {@inheritdoc}
      */
     public function isTemplated() {
-        return (bool)$this->templated;
+        return $this->hrefIsTemplated($this->href);
     }
 
     /**
@@ -73,4 +66,17 @@ trait LinkTrait
         return $this->attributes;
     }
 
+    /**
+     * Determines if an href is a templated link or not.
+     *
+     * @param string $href
+     *   The href value to check.
+     *
+     * @return bool
+     *   True if the specified href is a templated path, False otherwise.
+     */
+    private function hrefIsTemplated($href)
+    {
+        return strpos($href, '{') !== false ||strpos($href, '}') !== false;
+    }
 }

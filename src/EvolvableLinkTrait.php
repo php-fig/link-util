@@ -29,15 +29,6 @@ trait EvolvableLinkTrait
     /**
      * {@inheritdoc}
      */
-    public function withTemplated($templated) {
-        $that = clone($this);
-        $that->templated = (bool)$templated;
-        return $that;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function withRel($rel) {
         $that = clone($this);
         $that->rel[$rel] = true;
@@ -71,17 +62,4 @@ trait EvolvableLinkTrait
         return $that;
     }
 
-    /**
-     * Determines if an href is a templated link or not.
-     *
-     * @param string $href
-     *   The href value to check.
-     *
-     * @return bool
-     *   True if the specified href is a templated path, False otherwise.
-     */
-    private function hrefIsTemplated($href)
-    {
-        return strpos($href, '{') !== false ||strpos($href, '}') !== false;
-    }
 }
