@@ -1,5 +1,5 @@
 {
-    "name": "psr/link-util",
+    "name": "fig/link-util",
     "description": "Common utility implementations for HTTP links",
     "keywords": ["psr", "psr-13", "http", "http-link", "link", "rest"],
     "license": "MIT",
