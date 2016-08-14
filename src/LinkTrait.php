@@ -58,7 +58,7 @@ trait LinkTrait
     /**
      * {@inheritdoc}
      */
-    public function getRel()
+    public function getRels()
     {
         return array_keys($this->rel);
     }

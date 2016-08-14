@@ -37,7 +37,7 @@ trait LinkCollectionTrait
     public function getLinksByRel($rel)
     {
         $filter = function (LinkInterface $link) use ($rel) {
-            return in_array($rel, $link->getRel());
+            return in_array($rel, $link->getRels());
         };
         return array_filter($this->links, $filter);
     }

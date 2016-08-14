@@ -16,7 +16,7 @@ class LinkTest extends \PHPUnit_Framework_TestCase
         ;
 
         $this->assertEquals('http://www.google.com', $link->getHref());
-        $this->assertContains('next', $link->getRel());
+        $this->assertContains('next', $link->getRels());
         $this->assertArrayHasKey('me', $link->getAttributes());
         $this->assertEquals('you', $link->getAttributes()['me']);
     }
@@ -33,7 +33,7 @@ class LinkTest extends \PHPUnit_Framework_TestCase
             ->withoutRel('next');
 
         $this->assertEquals('http://www.google.com', $link->getHref());
-        $this->assertFalse(in_array('next', $link->getRel()));
+        $this->assertFalse(in_array('next', $link->getRels()));
         $this->assertFalse(array_key_exists('me', $link->getAttributes()));
     }
 
@@ -44,9 +44,9 @@ class LinkTest extends \PHPUnit_Framework_TestCase
             ->withRel('next')
             ->withRel('reference');
 
-        $this->assertCount(2, $link->getRel());
-        $this->assertContains('next', $link->getRel());
-        $this->assertContains('reference', $link->getRel());
+        $this->assertCount(2, $link->getRels());
+        $this->assertContains('next', $link->getRels());
+        $this->assertContains('reference', $link->getRels());
     }
 
     public function test_constructor()
@@ -54,6 +54,6 @@ class LinkTest extends \PHPUnit_Framework_TestCase
         $link = new Link('next', 'http://www.google.com');
 
         $this->assertEquals('http://www.google.com', $link->getHref());
-        $this->assertContains('next', $link->getRel());
+        $this->assertContains('next', $link->getRels());
     }
 }
