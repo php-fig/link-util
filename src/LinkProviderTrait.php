@@ -3,18 +3,18 @@
 
 namespace Fig\Link;
 
-use Psr\Link\LinkCollectionInterface;
+use Psr\Link\LinkProviderInterface;
 use Psr\Link\LinkInterface;
 
 /**
- * Class LinkCollectionTrait
+ * Class LinkProviderTrait
  *
- * @implements LinkCollectionInterface
+ * @implements LinkProviderInterface
  */
-trait LinkCollectionTrait
+trait LinkProviderTrait
 {
     /**
-     * A collection of the links in this collection.
+     * An array of the links in this provider.
      *
      * The keys of the array MUST be the spl_object_hash() of the object being stored.
      * That helps to ensure uniqueness.

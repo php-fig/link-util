@@ -3,10 +3,10 @@
 
 namespace Fig\Link\Tests;
 
-use Fig\Link\GenericLinkCollection;
+use Fig\Link\GenericLinkProvider;
 use Fig\Link\Link;
 
-class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase
+class GenericLinkProviderTest extends \PHPUnit_Framework_TestCase
 {
 
     public function test_can_add_links_by_method()
@@ -17,10 +17,10 @@ class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase
             ->withAttribute('me', 'you')
         ;
 
-        $collection = (new GenericLinkCollection())
+        $provider = (new GenericLinkProvider())
             ->withLink($link);
 
-        $this->assertContains($link, $collection->getLinks());
+        $this->assertContains($link, $provider->getLinks());
     }
 
 
@@ -32,10 +32,10 @@ class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase
             ->withAttribute('me', 'you')
         ;
 
-        $collection = (new GenericLinkCollection())
+        $provider = (new GenericLinkProvider())
             ->withLink($link);
 
-        $this->assertContains($link, $collection->getLinks());
+        $this->assertContains($link, $provider->getLinks());
     }
 
     public function test_can_get_links_by_rel()
@@ -51,11 +51,11 @@ class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase
             ->withAttribute('me', 'you')
         ;
 
-        $collection = (new GenericLinkCollection())
+        $provider = (new GenericLinkProvider())
             ->withLink($link1)
             ->withLink($link2);
 
-        $links = $collection->getLinksByRel('home');
+        $links = $provider->getLinksByRel('home');
         $this->assertContains($link2, $links);
         $this->assertFalse(in_array($link1, $links));
     }
@@ -68,10 +68,10 @@ class GenericLinkCollectionTest extends \PHPUnit_Framework_TestCase
             ->withAttribute('me', 'you')
         ;
 
-        $collection = (new GenericLinkCollection())
+        $provider = (new GenericLinkProvider())
             ->withLink($link)
             ->withoutLink($link);
 
-        $this->assertFalse(in_array($link, $collection->getLinks()));
+        $this->assertFalse(in_array($link, $provider->getLinks()));
     }
 }
