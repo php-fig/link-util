@@ -2,18 +2,18 @@
 
 namespace Fig\Link;
 
-use Psr\Link\EvolvableLinkCollectionInterface;
+use Psr\Link\EvolvableLinkProviderInterface;
 use Psr\Link\LinkInterface;
 
-class GenericLinkCollection implements EvolvableLinkCollectionInterface
+class GenericLinkProvider implements EvolvableLinkProviderInterface
 {
-    use EvolvableLinkCollectionTrait;
+    use EvolvableLinkProviderTrait;
 
     /**
-     * Constructs a new link collection.
+     * Constructs a new link provider.
      *
      * @param LinkInterface[] $links
-     *   Optionally, specify an initial set of links for this collection.
+     *   Optionally, specify an initial set of links for this provider.
      *   Note that the keys of the array will be ignored.
      */
     public function __construct(array $links = [])

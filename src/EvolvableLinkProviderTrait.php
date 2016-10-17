@@ -3,16 +3,16 @@
 namespace Fig\Link;
 
 use Psr\Link\LinkInterface;
-use Psr\Link\EvolvableLinkCollectionInterface;
+use Psr\Link\EvolvableLinkProviderInterface;
 
 /**
- * Class EvolvableLinkCollectionTrait
+ * Class EvolvableLinkProviderTrait
  *
- * @implements EvolvableLinkCollectionInterface
+ * @implements EvolvableLinkProviderInterface
  */
-trait EvolvableLinkCollectionTrait
+trait EvolvableLinkProviderTrait
 {
-    use LinkCollectionTrait;
+    use LinkProviderTrait;
 
     /**
      * {@inheritdoc}
