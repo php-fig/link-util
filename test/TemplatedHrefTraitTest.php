@@ -5,8 +5,9 @@ namespace Fig\Link\Tests;
 
 
 use Fig\Link\Link;
+use PHPUnit\Framework\TestCase;
 
-class TemplatedHrefTraitTest extends \PHPUnit_Framework_TestCase {
+class TemplatedHrefTraitTest extends TestCase {
 
     /**
      *
