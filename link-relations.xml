@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="link-relations.xsl"?>
+<?oxygen RNGSchema="link-relations.rng" type="xml"?>
+<registry xmlns="http://www.iana.org/assignments" id="link-relations">
+  <title>Link Relations</title>
+  <created>2005-08-26</created>
+  <updated>2019-11-13</updated>
+
+<registry id="link-relations-1">
+  <title>Link Relation Types</title>
+  <xref type="rfc" data="rfc8288"/>
+  <registration_rule>Specification Required</registration_rule>
+  <expert>Mark Nottingham, Julian Reschke, Jan Algermissen</expert>
+  <note>New link relations, along with changes to existing relations, can be requested 
+using the <xref type="uri" data="https://github.com/link-relations/registry">registry interface</xref> or the mailing list defined in <xref type="rfc" data="rfc8288"/>.
+  </note>  
+  
+  <record>
+    <value>about</value>
+    <description>Refers to a resource that is the subject of the link's context.</description>
+    <spec><xref type="rfc" data="rfc6903"/>, section 2</spec>
+  </record>
+  
+  <record>
+    <value>alternate</value>
+    <description>Refers to a substitute for this context</description>
+	<spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-alternate">HTML</xref></spec>
+  </record>
+  
+  <record>
+    <value>appendix</value>
+    <description>Refers to an appendix.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>apple-touch-icon</value>
+    <description>Refers to an icon for the context. Synonym for icon.</description>
+    <spec><xref type="uri" data="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3">Configuring Web Applications</xref></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>apple-touch-startup-image</value>
+    <description>Refers to a launch screen for the context.</description>
+    <spec><xref type="uri" data="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3">Configuring Web Applications</xref></spec>
+  </record>
+  
+  <record date="2010-11-09">
+    <value>archives</value>
+    <description>Refers to a collection of records, documents, or other
+      materials of historical interest.</description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/2011/WD-html5-20110113/links.html#rel-archives">HTML5</xref></spec>
+  </record>
+  
+  <record date="2010-11-09">
+    <value>author</value>
+    <description>Refers to the context's author.</description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-author">HTML</xref></spec>
+  </record>
+  
+  <record date="2015-12-21">
+    <value>blocked-by</value>
+    <description>Identifies the entity that blocks access to a resource
+      following receipt of a legal demand.</description>
+    <spec><xref type="rfc" data="rfc7725"/></spec>
+  </record>
+  
+  <record>
+    <value>bookmark</value>
+    <description>Gives a permanent link to use for bookmarking purposes.</description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-bookmark">HTML</xref></spec>
+  </record>
+  
+  <record>
+    <value>canonical</value>
+    <description>Designates the preferred version of a resource (the IRI and its contents).</description>
+    <spec><xref type="rfc" data="rfc6596"/></spec>
+  </record>
+  
+  <record>
+    <value>chapter</value>
+    <description>Refers to a chapter in a collection of resources.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record date="2017-10-26" updated="2019-02-26">
+    <value>cite-as</value>		
+    <description>Indicates that the link target is preferred over the link context for the purpose of permanent citation.</description>		
+    <spec><xref type="rfc" data="rfc8574"/></spec>		
+  </record>
+  
+  <record>
+    <value>collection</value>
+    <description>The target IRI points to a resource which represents the collection resource for the context IRI.</description>
+    <spec><xref type="rfc" data="rfc6573"/></spec>
+  </record>
+  
+  <record>
+    <value>contents</value>
+    <description>Refers to a table of contents.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record date="2016-08-12">
+    <value>convertedFrom</value>
+    <description>The document linked to was later converted to the
+      document that contains this link relation.  For example, an RFC can
+      have a link to the Internet-Draft that became the RFC; in that case,
+      the link relation would be "convertedFrom".</description>
+    <spec><xref type="rfc" data="rfc7991"/></spec>
+    <note>This relation is different than "predecessor-version" in that
+      "predecessor-version" is for items in a version control system.  It
+      is also different than "previous" in that this relation is used for
+      converted resources, not those that are part of a sequence of
+      resources.</note>
+  </record>
+  
+  <record>
+    <value>copyright</value>
+    <description>Refers to a copyright statement that applies to the
+    link's context.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record>
+    <value>create-form</value>
+    <description>The target IRI points to a resource where a submission form can be obtained.</description>
+    <spec><xref type="rfc" data="rfc6861"/></spec>
+  </record>
+  
+  <record>
+    <value>current</value>
+    <description>Refers to a resource containing the most recent
+      item(s) in a collection of resources.</description>
+    <spec><xref type="rfc" data="rfc5005"/></spec>
+  </record>
+  
+  <record>
+    <value>describedby</value>
+    <description>Refers to a resource providing information about the
+      link's context.</description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/powder-dr/#assoc-linking">Protocol for Web Description Resources (POWDER)</xref></spec>
+  </record>
+  
+  <record>
+    <value>describes</value>
+    <description>The relationship A 'describes' B asserts that
+      resource A provides a description of resource B. There are no
+      constraints on the format or representation of either A or B,
+      neither are there any further constraints on either resource.</description>
+    <spec><xref type="rfc" data="rfc6892"/></spec>
+      <note>This link relation type is the inverse of the 'describedby'
+        relation type.  While 'describedby' establishes a relation from
+        the described resource back to the resource that describes it,
+        'describes' established a relation from the describing resource to
+        the resource it describes.  If B is 'describedby' A, then A
+        'describes' B.</note>
+  </record>
+  
+  <record>
+    <value>disclosure</value>
+    <description>Refers to a list of patent disclosures made with respect to 
+      material for which 'disclosure' relation is specified.</description>
+    <spec><xref type="rfc" data="rfc6579"/></spec>
+  </record>
+  
+  <record date="2016-02-29">
+    <value>dns-prefetch</value>
+    <description>Used to indicate an origin that will be used to fetch required 
+      resources for the link context, and that the user agent ought to resolve 
+      as early as possible.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/resource-hints/">Resource Hints</xref></spec>
+  </record>
+  
+  <record>
+    <value>duplicate</value>
+    <description>Refers to a resource whose available representations
+      are byte-for-byte identical with the corresponding representations of
+      the context IRI.</description>
+    <spec><xref type="rfc" data="rfc6249"/></spec>
+    <note>This relation is for static resources.  That is, an HTTP GET
+      request on any duplicate will return the same representation.  It
+      does not make sense for dynamic or POSTable resources and should not
+      be used for them.
+    </note>
+  </record>
+  
+  <record>
+    <value>edit</value>
+    <description>Refers to a resource that can be used to edit the
+      link's context.</description>
+    <spec><xref type="rfc" data="rfc5023"/></spec>
+  </record>
+  
+  <record>
+    <value>edit-form</value>
+    <description>The target IRI points to a resource where a submission form for
+      editing associated resource can be obtained.</description>
+    <spec><xref type="rfc" data="rfc6861"/></spec>
+  </record>
+  
+  <record>
+    <value>edit-media</value>
+    <description>Refers to a resource that can be used to edit media
+      associated with the link's context.</description>
+    <spec><xref type="rfc" data="rfc5023"/></spec>
+  </record>
+  
+  <record>
+    <value>enclosure</value>
+    <description>Identifies a related resource that is potentially
+      large and might require special handling.</description>
+    <spec><xref type="rfc" data="rfc4287"/></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>external</value>
+    <description>Refers to a resource that is not part of the same site as the current context.</description>
+    <spec><xref type="uri" data="https://html.spec.whatwg.org/multipage/links.html#link-type-external">HTML</xref></spec>
+  </record>
+  
+  <record>
+    <value>first</value>
+    <description>An IRI that refers to the furthest preceding resource
+    in a series of resources.</description>
+    <spec><xref type="rfc" data="rfc8288"/></spec>
+    <note>This relation type registration did not indicate a
+      reference.  Originally requested by Mark Nottingham in December
+      2004.
+    </note>
+  </record>
+  
+  <record>
+    <value>glossary</value>
+    <description>Refers to a glossary of terms.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record>
+    <value>help</value>
+    <description>Refers to context-sensitive help.</description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-help">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record>
+    <value>hosts</value>
+    <description>Refers to a resource hosted by the server indicated by
+      the link context.</description>
+    <spec><xref type="rfc" data="rfc6690"/></spec>
+    <note>This relation is used in CoRE where links are retrieved as a
+      "/.well-known/core" resource representation, and is the default
+      relation type in the CoRE Link Format.</note>
+  </record>
+  
+  <record updated="2019-07-29">
+    <value>hub</value>
+    <description>Refers to a hub that enables registration for
+    notification of updates to the context.</description>    
+    <spec><xref type="uri" data="https://www.w3.org/TR/websub/">WebSub</xref></spec>
+    <note>This relation type was requested by Brett Slatkin.</note>
+  </record>
+  
+  <record date="2010-11-09">
+    <value>icon</value>
+    <description>Refers to an icon representing the link's context.</description>    
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-icon">HTML</xref></spec>
+  </record>
+  
+  <record>
+    <value>index</value>
+    <description>Refers to an index.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalAfter</value>
+    <description>refers to a resource associated with a time interval that ends before the beginning of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalAfter">Time Ontology in OWL</xref> section 4.2.21</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalBefore</value>
+    <description>refers to a resource associated with a time interval that begins after the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalBefore">Time Ontology in OWL</xref> section 4.2.22</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalContains</value>
+    <description>refers to a resource associated with a time interval that begins after the beginning of the time interval associated with the context resource, and ends before the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalContains">Time Ontology in OWL</xref> section 4.2.23</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalDisjoint</value>
+    <description>refers to a resource associated with a time interval that begins after the end of the time interval associated with the context resource, or ends before the beginning of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalDisjoint">Time Ontology in OWL</xref> section 4.2.24</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalDuring</value>
+    <description>refers to a resource associated with a time interval that begins before the beginning of the time interval associated with the context resource, and ends after the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalDuring">Time Ontology in OWL</xref> section 4.2.25</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalEquals</value>
+    <description>refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval associated with the context resource, and whose end coincides with the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalEquals">Time Ontology in OWL</xref> section 4.2.26</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalFinishedBy</value>
+    <description>refers to a resource associated with a time interval that begins after the beginning of the time interval associated with the context resource, and whose end coincides with the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalFinishedBy">Time Ontology in OWL</xref> section 4.2.27</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalFinishes</value>
+    <description>refers to a resource associated with a time interval that begins before the beginning of the time interval associated with the context resource, and whose end coincides with the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalFinishes">Time Ontology in OWL</xref> section 4.2.28</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalIn</value>
+    <description>refers to a resource associated with a time interval that begins before or is coincident with the beginning of the time interval associated with the context resource, and ends after or is coincident with the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalIn">Time Ontology in OWL</xref> section 4.2.29</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalMeets</value>
+    <description>refers to a resource associated with a time interval whose beginning coincides with the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalMeets">Time Ontology in OWL</xref> section 4.2.30</spec>
+  </record>
+  
+  <record date="2018-11-29" updated="2019-07-17">
+    <value>intervalMetBy</value>
+    <description>refers to a resource associated with a time interval whose end coincides with the beginning of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalMetBy">Time Ontology in OWL</xref> section 4.2.31</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalOverlappedBy</value>
+    <description>refers to a resource associated with a time interval that begins before the beginning of the time interval associated with the context resource, and ends after the beginning of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalOverlappedBy">Time Ontology in OWL</xref> section 4.2.32</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalOverlaps</value>
+    <description>refers to a resource associated with a time interval that begins before the end of the time interval associated with the context resource, and ends after the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalOverlaps">Time Ontology in OWL</xref> section 4.2.33</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalStartedBy</value>
+    <description>refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval associated with the context resource, and ends before the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalStartedBy">Time Ontology in OWL</xref> section 4.2.34</spec>
+  </record>
+  
+  <record date="2018-11-29">
+    <value>intervalStarts</value>
+    <description>refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval associated with the context resource, and ends after the end of the time interval associated with the context resource</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/owl-time/#time:intervalStarts">Time Ontology in OWL</xref> section 4.2.35</spec>
+  </record>
+  
+  <record>
+    <value>item</value>
+    <description>The target IRI points to a resource that is a member of the collection represented by the context IRI.</description>
+    <spec><xref type="rfc" data="rfc6573"/></spec>
+  </record>
+  
+  <record>
+    <value>last</value>
+    <description>An IRI that refers to the furthest following resource
+      in a series of resources.</description>
+    <spec><xref type="rfc" data="rfc8288"/></spec>
+    <note>This relation type registration did not indicate a
+      reference. Originally requested by Mark Nottingham in December
+      2004.
+    </note>
+  </record>
+  
+  <record>
+    <value>latest-version</value>
+    <description>Points to a resource containing the latest (e.g.,
+      current) version of the context.</description>
+    <spec><xref type="rfc" data="rfc5829"/></spec>
+  </record>
+  
+  <record>
+    <value>license</value>
+    <description>Refers to a license associated with this context.</description>
+    <spec><xref type="rfc" data="rfc4946"/></spec>
+    <note>For implications of use in HTML, see: 
+      http://www.w3.org/TR/html5/links.html#link-type-license</note>
+  </record>
+  
+  <record>
+    <value>lrdd</value>
+    <description>Refers to further information about the link's context,
+      expressed as a LRDD ("Link-based Resource Descriptor Document")
+      resource.  See <xref type="rfc" data="rfc6415"/> for information about
+      processing this relation type in host-meta documents. When used
+      elsewhere, it refers to additional links and other metadata.
+      Multiple instances indicate additional LRDD resources. LRDD
+      resources MUST have an "application/xrd+xml" representation, and
+      MAY have others.</description>
+    <spec><xref type="rfc" data="rfc6415"/></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>manifest</value>
+    <description>Links to a manifest file for the context.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/appmanifest/#using-a-link-element-to-link-to-a-manifest">Web App Manifest</xref></spec>
+  </record>
+  
+  <record date="2019-09-26">
+    <value>mask-icon</value>
+    <description>Refers to a mask that can be applied to the icon for the context.</description>
+	 <spec><xref type="uri" data="https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html#//apple_ref/doc/uid/TP40002051-CH18-SW1">Creating Pinned Tab Icons</xref></spec>
+  </record>
+
+  <record date="2013-11-01">
+    <value>memento</value>
+    <description>The Target IRI points to a Memento, a fixed resource that will not change state anymore.</description>
+    <spec><xref type="rfc" data="rfc7089"/></spec>
+    <note>A Memento for an Original Resource is a resource that
+      encapsulates a prior state of the Original Resource.</note>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>micropub</value>
+    <description>Links to the context's Micropub endpoint.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/micropub/#endpoint-discovery-p-1">Micropub</xref></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>modulepreload</value>
+    <description>Refers to a module that the user agent is to preemptively fetch and store for use in the current context.</description>
+    <spec><xref type="uri" data="https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload">HTML</xref></spec>
+  </record>
+
+  <record>
+    <value>monitor</value>
+    <description>Refers to a resource that can be used to monitor changes in an HTTP resource.
+    </description>
+    <spec><xref type="rfc" data="rfc5989"/></spec>
+  </record>
+  
+  <record>
+    <value>monitor-group</value>
+    <description>Refers to a resource that can be used to monitor changes in a specified group of HTTP resources.
+    </description>
+    <spec><xref type="rfc" data="rfc5989"/></spec>
+  </record>
+  
+  <record date="2006-02-02">
+    <value>next</value>
+    <description>Indicates that the link's context is a part of a series, and
+      that the next in the series is the link target.
+    </description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-next">HTML</xref></spec>
+  </record> 
+  
+  <record>
+    <value>next-archive</value>
+    <description>Refers to the immediately following archive resource.</description>
+    <spec><xref type="rfc" data="rfc5005"/></spec>
+  </record>
+  
+  <record date="2010-11-09">
+    <value>nofollow</value>
+    <description>Indicates that the context’s original author or publisher does not endorse the link target.</description>    
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-nofollow">HTML</xref></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>noopener</value>
+    <description>Indicates that any newly created top-level browsing context which results from following the link will not be an auxiliary browsing context.</description>
+    <spec><xref type="uri" data="https://html.spec.whatwg.org/multipage/links.html#link-type-noopener">HTML</xref></spec>
+  </record>
+  
+  <record date="2010-11-09">
+    <value>noreferrer</value>
+    <description>Indicates that no referrer information is to be leaked when following the link.</description>    
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-noreferrer">HTML</xref></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>opener</value>
+    <description>Indicates that any newly created top-level browsing context which results from following the link will be an auxiliary browsing context.</description>
+    <spec><xref type="uri" data="https://html.spec.whatwg.org/multipage/links.html#link-type-opener">HTML</xref></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>openid2.local_id</value>
+    <description>Refers to an OpenID Authentication server on which the context relies for an assertion that the end user controls an Identifier.</description>
+    <spec><xref type="uri" data="https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3">OpenID Authentication 2.0 - Final</xref></spec>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>openid2.provider</value>
+    <description>Refers to a resource which accepts OpenID Authentication protocol messages for the context.</description>
+    <spec><xref type="uri" data="https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3">OpenID Authentication 2.0 - Final</xref></spec>
+  </record>
+  
+  <record date="2013-11-01">
+    <value>original</value>
+    <description>The Target IRI points to an Original Resource.</description>
+    <spec><xref type="rfc" data="rfc7089"/></spec>
+    <note>An Original Resource is a resource that exists or used to
+      exist, and for which access to one of its prior states may be
+      required.
+    </note>
+  </record>
+  
+  <record date="2019-09-25">
+    <value>P3Pv1</value>
+    <description>Refers to a P3P privacy policy for the context.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/P3P/#syntax_link">The Platform for Privacy Preferences 1.0 (P3P1.0) Specification</xref></spec>
+  </record>
+  
+  <record>
+    <value>payment</value>
+    <description>Indicates a resource where payment is accepted.</description>
+    <spec><xref type="rfc" data="rfc8288"/></spec>
+    <note>This relation type registration did not indicate a
+      reference.  Requested by Joshua Kinberg and Robert Sayre.  It is
+      meant as a general way to facilitate acts of payment, and thus
+      this specification makes no assumptions on the type of payment or
+      transaction protocol.  Examples may include a web page where
+      donations are accepted or where goods and services are available
+      for purchase. rel="payment" is not intended to initiate an
+      automated transaction.  In Atom documents, a link element with a
+      rel="payment" attribute may exist at the feed/channel level and/or
+      the entry/item level.  For example, a rel="payment" link at the
+      feed/channel level may point to a "tip jar" URI, whereas an entry/
+      item containing a book review may include a rel="payment" link
+      that points to the location where the book may be purchased
+      through an online retailer.
+    </note>
+  </record>
+  
+  <record date="2016-02-04">
+    <value>pingback</value>
+    <description>Gives the address of the pingback resource for the link context.</description>    
+    <spec><xref type="uri" data="http://www.hixie.ch/specs/pingback/pingback">Pingback 1.0</xref></spec>
+  </record>
+  
+  <record date="2016-02-29">
+    <value>preconnect</value>
+    <description>Used to indicate an origin that will be used to fetch required 
+      resources for the link context. Initiating an early connection, which 
+      includes the DNS lookup, TCP handshake, and optional TLS negotiation, 
+      allows the user agent to mask the high latency costs of establishing a 
+      connection.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/resource-hints/">Resource Hints</xref></spec>
+  </record>
+
+  <record>
+    <value>predecessor-version</value>
+    <description>Points to a resource containing the predecessor
+      version in the version history.
+    </description>
+    <spec><xref type="rfc" data="rfc5829"/></spec>
+  </record>
+
+  <record date="2010-11-09" updated="2016-03-03">
+    <value>prefetch</value>
+    <description>The prefetch link relation type is used to identify a resource 
+      that might be required by the next navigation from the link context, and 
+      that the user agent ought to fetch, such that the user agent can deliver a 
+      faster response once the resource is requested in the future.</description>    
+    <spec><xref type="uri" data="http://www.w3.org/TR/resource-hints/">Resource Hints</xref></spec>
+  </record>
+  
+  <record date="2016-01-22">
+    <value>preload</value>
+    <description>Refers to a resource that should be loaded early in the 
+      processing of the link's context, without blocking rendering.</description>    
+    <spec><xref type="uri" data="http://www.w3.org/TR/preload/">Preload</xref></spec>
+    <note>Additional target attributes establish the detailed fetch properties of the link.</note>
+  </record>
+  
+  <record date="2016-02-29">
+    <value>prerender</value>
+    <description>Used to identify a resource that might be required by the next 
+      navigation from the link context, and that the user agent ought to fetch 
+      and execute, such that the user agent can deliver a faster response once 
+      the resource is requested in the future.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/resource-hints/">Resource Hints</xref></spec>
+  </record>
+
+  <record>
+    <value>prev</value>
+    <description>Indicates that the link's context is a part of a series, and
+      that the previous in the series is the link target.
+    </description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-prev">HTML</xref></spec>
+  </record>  
+  
+  <record>
+    <value>preview</value>
+    <description>Refers to a resource that provides a preview of the link's context.</description>
+    <spec><xref type="rfc" data="rfc6903"/>, section 3</spec>
+  </record>
+
+  <record>
+    <value>previous</value>
+    <description>Refers to the previous resource in an ordered series
+      of resources.  Synonym for "prev".</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+
+  <record>
+    <value>prev-archive</value>
+    <description>Refers to the immediately preceding archive resource.</description>
+    <spec><xref type="rfc" data="rfc5005"/></spec>
+  </record>  
+  
+  <record>
+    <value>privacy-policy</value>
+    <description>Refers to a privacy policy associated with the link's context.</description>
+    <spec><xref type="rfc" data="rfc6903"/>, section 4</spec>
+  </record>  
+  
+  <record>
+    <value>profile</value>
+    <description>Identifying that a resource representation conforms
+to a certain profile, without affecting the non-profile semantics
+of the resource representation.</description>    
+    <spec><xref type="rfc" data="rfc6906"/></spec>
+    <note>Profile URIs are primarily intended to be used as
+identifiers, and thus clients SHOULD NOT indiscriminately access
+profile URIs.</note>
+  </record>
+  
+  <record>
+    <value>related</value>
+    <description>Identifies a related resource.</description>
+    <spec><xref type="rfc" data="rfc4287"/></spec>
+  </record>
+  
+  <record>
+    <value>restconf</value>
+    <description>Identifies the root of RESTCONF API as configured on this HTTP server.
+      The "restconf" relation defines the root of the API defined in RFC8040.
+      Subsequent revisions of RESTCONF will use alternate relation values to support 
+      protocol versioning.</description>
+    <spec><xref type="rfc" data="rfc8040"/></spec>
+  </record>
+  
+  <record>
+    <value>replies</value>
+    <description>Identifies a resource that is a reply to the context
+      of the link.
+    </description>
+    <spec><xref type="rfc" data="rfc4685"/></spec>
+  </record>
+
+  <record date="2010-11-09">
+    <value>search</value>
+    <description>Refers to a resource that can be used to search through
+      the link's context and related resources.</description>
+    <spec><xref type="uri" data="http://www.opensearch.org/Specifications/OpenSearch/1.1">OpenSearch</xref></spec>
+  </record>
+
+  <record>
+    <value>section</value>
+    <description>Refers to a section in a collection of resources.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record>
+    <value>self</value>
+    <description>Conveys an identifier for the link's context.
+    </description>
+    <spec><xref type="rfc" data="rfc4287"/></spec>
+  </record>
+  
+  <record>
+    <value>service</value>
+    <description>Indicates a URI that can be used to retrieve a
+      service document.</description>
+    <spec><xref type="rfc" data="rfc5023"/></spec>
+    <note>When used in an Atom document, this relation type specifies
+      Atom Publishing Protocol service documents by default.  Requested
+      by James Snell.
+    </note>
+  </record>
+  
+  <record date="2019-05-30">
+    <value>service-desc</value>
+    <description>Identifies service description for the context that
+      is primarily intended for consumption by machines.</description>
+    <spec><xref type="rfc" data="rfc8631"/></spec>
+    <note/>
+  </record>
+  
+  <record date="2019-05-30">
+    <value>service-doc</value>
+    <description>Identifies service documentation for the context that
+      is primarily intended for human consumption.</description>
+    <spec><xref type="rfc" data="rfc8631"/></spec>
+    <note/>
+  </record>
+  
+  <record date="2019-05-30">
+    <value>service-meta</value>
+    <description>Identifies general metadata for the context that is
+      primarily intended for consumption by machines.</description>
+    <spec><xref type="rfc" data="rfc8631"/></spec>
+    <note/>
+  </record>
+  
+  <record date="2019-11-07">
+    <value>sponsored</value>
+    <description>Refers to a resource that is within a context that is 
+		sponsored (such as advertising or another compensation agreement).</description>
+    <spec><xref type="uri" data="https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html">Google Blog post 09-2019</xref></spec>
+    <note/>
+  </record>
+  
+  <record>
+    <value>start</value>
+    <description>Refers to the first resource in a collection of
+      resources.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record date="2019-05-30">
+    <value>status</value>
+    <description>Identifies a resource that represents the context's
+      status.</description>
+    <spec><xref type="rfc" data="rfc8631"/></spec>
+    <note/>
+  </record>
+  
+  <record>
+    <value>stylesheet</value>
+    <description>Refers to a stylesheet.</description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-stylesheet">HTML</xref></spec>
+  </record>
+  
+  <record>
+    <value>subsection</value>
+    <description>Refers to a resource serving as a subsection in a
+      collection of resources.</description>
+    <spec><xref type="uri" data="https://www.w3.org/TR/html401/">HTML 4.01 Specification</xref></spec>
+  </record>
+  
+  <record>
+    <value>successor-version</value>
+    <description>Points to a resource containing the successor version
+      in the version history.
+    </description>
+    <spec><xref type="rfc" data="rfc5829"/></spec>
+  </record>
+  
+  <record date="2019-04-01">
+    <value>sunset</value>
+    <description>Identifies a resource that provides information about
+      the context's retirement policy.
+    </description>
+    <spec><xref type="rfc" data="rfc8594"/></spec>
+  </record>
+  
+  <record>
+    <value>tag</value>
+    <description>Gives a tag (identified by the given address) that applies to
+      the current document.
+    </description>
+    <spec><xref type="uri" data="http://www.w3.org/TR/html5/links.html#link-type-tag">HTML</xref></spec>
+  </record>  
+  
+  <record>
+    <value>terms-of-service</value>
+    <description>Refers to the terms of service associated with the link's context.</description>
+    <spec><xref type="rfc" data="rfc6903"/>, section 5</spec>
+  </record>  
+
+  <record date="2013-11-01">
+    <value>timegate</value>
+    <description>The Target IRI points to a TimeGate for an Original Resource.</description>
+    <spec><xref type="rfc" data="rfc7089"/></spec>
+    <note>A TimeGate for an Original Resource is a resource that is
+      capable of datetime negotiation to support access to prior states
+      of the Original Resource.
+    </note>
+  </record>
+
+  <record date="2013-11-01">
+    <value>timemap</value>
+    <description>The Target IRI points to a TimeMap for an Original Resource.</description>
+    <spec><xref type="rfc" data="rfc7089"/></spec>
+    <note>A TimeMap for an Original Resource is a resource from which
+      a list of URIs of Mementos of the Original Resource is available.
+    </note>
+  </record>
+
+  <record>
+    <value>type</value>
+    <description>Refers to a resource identifying the abstract semantic type of which the link's context is considered to be an instance.</description>
+    <spec><xref type="rfc" data="rfc6903"/>, section 6</spec>
+  </record>
+  
+  <record date="2019-11-07">
+    <value>ugc</value>
+    <description>Refers to a resource that is within a context that is User Generated Content.
+    </description>
+    <spec><xref type="uri" data="https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html">Google Blog post 09-2019</xref></spec>
+	<note/>
+  </record>
+  
+  <record>
+    <value>up</value>
+    <description>Refers to a parent document in a hierarchy of
+      documents.
+    </description>
+    <spec><xref type="rfc" data="rfc8288"/></spec>
+    <note>This relation type registration did not indicate a
+      reference.  Requested by Noah Slater.</note>
+  </record>
+  
+  <record>
+    <value>version-history</value>
+    <description>Points to a resource containing the version history
+      for the context.
+    </description>
+    <spec><xref type="rfc" data="rfc5829"/></spec>
+  </record>
+  
+  <record>
+    <value>via</value>
+    <description>Identifies a resource that is the source of the
+      information in the link's context.
+    </description>
+    <spec><xref type="rfc" data="rfc4287"/></spec>
+  </record>
+  
+  <record date="2016-04-19">
+    <value>webmention</value>
+    <description>Identifies a target URI that supports the Webmention protcol.
+    This allows clients that mention a resource in some form of publishing process
+    to contact that endpoint and inform it that this resource has been mentioned.</description>    
+    <spec><xref type="uri" data="http://www.w3.org/TR/webmention/">Webmention</xref></spec>
+    <note>This is a similar "Linkback" mechanism to the ones of Refback, Trackback, and Pingback.
+    It uses a different protocol, though, and thus should be discoverable through its own link
+    relation type.</note>
+  </record>
+  
+  <record>
+    <value>working-copy</value>
+    <description>Points to a working copy for this resource.</description>
+    <spec><xref type="rfc" data="rfc5829"/></spec>
+  </record>
+  
+  <record>
+    <value>working-copy-of</value>
+    <description>Points to the versioned resource from which this
+      working copy was obtained.
+    </description>
+    <spec><xref type="rfc" data="rfc5829"/></spec>
+  </record>
+ 
+</registry>
+  
+  <people/>
+</registry>
