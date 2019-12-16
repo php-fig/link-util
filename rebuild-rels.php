@@ -78,7 +78,8 @@ class RegistryCompiler
         $note = $this->rewrap((string)$record->note);
         $seeUri = $this->xrefLink($record->spec->xref);
 
-        return <<<END
+        if ($note) {
+            return <<<END
 
     /**
      * {$description}
@@ -90,6 +91,22 @@ class RegistryCompiler
     const REL_$name = '$value';
 
 END;
+
+        }
+        else {
+            return <<<END
+
+    /**
+     * {$description}
+     *
+     * @see {$seeUri}
+     */
+    const REL_$name = '$value';
+
+END;
+
+        }
+
     }
 
     /**

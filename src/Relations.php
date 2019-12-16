@@ -29,16 +29,12 @@ interface Relations
     /**
      * Refers to a resource that is the subject of the link's context.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc6903
      */
     const REL_ABOUT = 'about';
 
     /**
      * Refers to a substitute for this context
-     *
-     * 
      *
      * @see http://www.w3.org/TR/html5/links.html#link-type-alternate
      */
@@ -47,16 +43,12 @@ interface Relations
     /**
      * Refers to an appendix.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/html401/
      */
     const REL_APPENDIX = 'appendix';
 
     /**
      * Refers to an icon for the context. Synonym for icon.
-     *
-     * 
      *
      * @see https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3
      */
@@ -65,16 +57,12 @@ interface Relations
     /**
      * Refers to a launch screen for the context.
      *
-     * 
-     *
      * @see https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3
      */
     const REL_APPLE_TOUCH_STARTUP_IMAGE = 'apple-touch-startup-image';
 
     /**
      * Refers to a collection of records, documents, or other materials of historical interest.
-     *
-     * 
      *
      * @see http://www.w3.org/TR/2011/WD-html5-20110113/links.html#rel-archives
      */
@@ -83,16 +71,12 @@ interface Relations
     /**
      * Refers to the context's author.
      *
-     * 
-     *
      * @see http://www.w3.org/TR/html5/links.html#link-type-author
      */
     const REL_AUTHOR = 'author';
 
     /**
      * Identifies the entity that blocks access to a resource following receipt of a legal demand.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc7725
      */
@@ -101,16 +85,12 @@ interface Relations
     /**
      * Gives a permanent link to use for bookmarking purposes.
      *
-     * 
-     *
      * @see http://www.w3.org/TR/html5/links.html#link-type-bookmark
      */
     const REL_BOOKMARK = 'bookmark';
 
     /**
      * Designates the preferred version of a resource (the IRI and its contents).
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc6596
      */
@@ -119,16 +99,12 @@ interface Relations
     /**
      * Refers to a chapter in a collection of resources.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/html401/
      */
     const REL_CHAPTER = 'chapter';
 
     /**
      * Indicates that the link target is preferred over the link context for the purpose of permanent citation.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc8574
      */
@@ -137,16 +113,12 @@ interface Relations
     /**
      * The target IRI points to a resource which represents the collection resource for the context IRI.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc6573
      */
     const REL_COLLECTION = 'collection';
 
     /**
      * Refers to a table of contents.
-     *
-     * 
      *
      * @see https://www.w3.org/TR/html401/
      */
@@ -167,16 +139,12 @@ interface Relations
     /**
      * Refers to a copyright statement that applies to the link's context.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/html401/
      */
     const REL_COPYRIGHT = 'copyright';
 
     /**
      * The target IRI points to a resource where a submission form can be obtained.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc6861
      */
@@ -185,16 +153,12 @@ interface Relations
     /**
      * Refers to a resource containing the most recent item(s) in a collection of resources.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5005
      */
     const REL_CURRENT = 'current';
 
     /**
      * Refers to a resource providing information about the link's context.
-     *
-     * 
      *
      * @see http://www.w3.org/TR/powder-dr/#assoc-linking
      */
@@ -215,8 +179,6 @@ interface Relations
     /**
      * Refers to a list of patent disclosures made with respect to material for which 'disclosure' relation is specified.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc6579
      */
     const REL_DISCLOSURE = 'disclosure';
@@ -224,8 +186,6 @@ interface Relations
     /**
      * Used to indicate an origin that will be used to fetch required resources for the link context, and that the user agent
      * ought to resolve as early as possible.
-     *
-     * 
      *
      * @see https://www.w3.org/TR/resource-hints/
      */
@@ -245,16 +205,12 @@ interface Relations
     /**
      * Refers to a resource that can be used to edit the link's context.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5023
      */
     const REL_EDIT = 'edit';
 
     /**
      * The target IRI points to a resource where a submission form for editing associated resource can be obtained.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc6861
      */
@@ -263,8 +219,6 @@ interface Relations
     /**
      * Refers to a resource that can be used to edit media associated with the link's context.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5023
      */
     const REL_EDIT_MEDIA = 'edit-media';
@@ -272,16 +226,12 @@ interface Relations
     /**
      * Identifies a related resource that is potentially large and might require special handling.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc4287
      */
     const REL_ENCLOSURE = 'enclosure';
 
     /**
      * Refers to a resource that is not part of the same site as the current context.
-     *
-     * 
      *
      * @see https://html.spec.whatwg.org/multipage/links.html#link-type-external
      */
@@ -299,16 +249,12 @@ interface Relations
     /**
      * Refers to a glossary of terms.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/html401/
      */
     const REL_GLOSSARY = 'glossary';
 
     /**
      * Refers to context-sensitive help.
-     *
-     * 
      *
      * @see http://www.w3.org/TR/html5/links.html#link-type-help
      */
@@ -336,16 +282,12 @@ interface Relations
     /**
      * Refers to an icon representing the link's context.
      *
-     * 
-     *
      * @see http://www.w3.org/TR/html5/links.html#link-type-icon
      */
     const REL_ICON = 'icon';
 
     /**
      * Refers to an index.
-     *
-     * 
      *
      * @see https://www.w3.org/TR/html401/
      */
@@ -355,8 +297,6 @@ interface Relations
      * refers to a resource associated with a time interval that ends before the beginning of the time interval associated with
      * the context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalAfter
      */
     const REL_INTERVALAFTER = 'intervalAfter';
@@ -364,8 +304,6 @@ interface Relations
     /**
      * refers to a resource associated with a time interval that begins after the end of the time interval associated with the
      * context resource
-     *
-     * 
      *
      * @see https://www.w3.org/TR/owl-time/#time:intervalBefore
      */
@@ -375,8 +313,6 @@ interface Relations
      * refers to a resource associated with a time interval that begins after the beginning of the time interval associated
      * with the context resource, and ends before the end of the time interval associated with the context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalContains
      */
     const REL_INTERVALCONTAINS = 'intervalContains';
@@ -385,8 +321,6 @@ interface Relations
      * refers to a resource associated with a time interval that begins after the end of the time interval associated with the
      * context resource, or ends before the beginning of the time interval associated with the context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalDisjoint
      */
     const REL_INTERVALDISJOINT = 'intervalDisjoint';
@@ -394,8 +328,6 @@ interface Relations
     /**
      * refers to a resource associated with a time interval that begins before the beginning of the time interval associated
      * with the context resource, and ends after the end of the time interval associated with the context resource
-     *
-     * 
      *
      * @see https://www.w3.org/TR/owl-time/#time:intervalDuring
      */
@@ -406,8 +338,6 @@ interface Relations
      * associated with the context resource, and whose end coincides with the end of the time interval associated with the
      * context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalEquals
      */
     const REL_INTERVALEQUALS = 'intervalEquals';
@@ -416,8 +346,6 @@ interface Relations
      * refers to a resource associated with a time interval that begins after the beginning of the time interval associated
      * with the context resource, and whose end coincides with the end of the time interval associated with the context
      * resource
-     *
-     * 
      *
      * @see https://www.w3.org/TR/owl-time/#time:intervalFinishedBy
      */
@@ -428,8 +356,6 @@ interface Relations
      * with the context resource, and whose end coincides with the end of the time interval associated with the context
      * resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalFinishes
      */
     const REL_INTERVALFINISHES = 'intervalFinishes';
@@ -439,8 +365,6 @@ interface Relations
      * interval associated with the context resource, and ends after or is coincident with the end of the time interval
      * associated with the context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalIn
      */
     const REL_INTERVALIN = 'intervalIn';
@@ -448,8 +372,6 @@ interface Relations
     /**
      * refers to a resource associated with a time interval whose beginning coincides with the end of the time interval
      * associated with the context resource
-     *
-     * 
      *
      * @see https://www.w3.org/TR/owl-time/#time:intervalMeets
      */
@@ -459,8 +381,6 @@ interface Relations
      * refers to a resource associated with a time interval whose end coincides with the beginning of the time interval
      * associated with the context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalMetBy
      */
     const REL_INTERVALMETBY = 'intervalMetBy';
@@ -468,8 +388,6 @@ interface Relations
     /**
      * refers to a resource associated with a time interval that begins before the beginning of the time interval associated
      * with the context resource, and ends after the beginning of the time interval associated with the context resource
-     *
-     * 
      *
      * @see https://www.w3.org/TR/owl-time/#time:intervalOverlappedBy
      */
@@ -479,8 +397,6 @@ interface Relations
      * refers to a resource associated with a time interval that begins before the end of the time interval associated with the
      * context resource, and ends after the end of the time interval associated with the context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalOverlaps
      */
     const REL_INTERVALOVERLAPS = 'intervalOverlaps';
@@ -488,8 +404,6 @@ interface Relations
     /**
      * refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval
      * associated with the context resource, and ends before the end of the time interval associated with the context resource
-     *
-     * 
      *
      * @see https://www.w3.org/TR/owl-time/#time:intervalStartedBy
      */
@@ -499,16 +413,12 @@ interface Relations
      * refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval
      * associated with the context resource, and ends after the end of the time interval associated with the context resource
      *
-     * 
-     *
      * @see https://www.w3.org/TR/owl-time/#time:intervalStarts
      */
     const REL_INTERVALSTARTS = 'intervalStarts';
 
     /**
      * The target IRI points to a resource that is a member of the collection represented by the context IRI.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc6573
      */
@@ -525,8 +435,6 @@ interface Relations
 
     /**
      * Points to a resource containing the latest (e.g., current) version of the context.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc5829
      */
@@ -547,8 +455,6 @@ interface Relations
      * to additional links and other metadata. Multiple instances indicate additional LRDD resources. LRDD resources MUST have
      * an "application/xrd+xml" representation, and MAY have others.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc6415
      */
     const REL_LRDD = 'lrdd';
@@ -556,16 +462,12 @@ interface Relations
     /**
      * Links to a manifest file for the context.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/appmanifest/#using-a-link-element-to-link-to-a-manifest
      */
     const REL_MANIFEST = 'manifest';
 
     /**
      * Refers to a mask that can be applied to the icon for the context.
-     *
-     * 
      *
      * @see https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html#//apple_ref/doc/uid/TP40002051-CH18-SW1
      */
@@ -583,16 +485,12 @@ interface Relations
     /**
      * Links to the context's Micropub endpoint.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/micropub/#endpoint-discovery-p-1
      */
     const REL_MICROPUB = 'micropub';
 
     /**
      * Refers to a module that the user agent is to preemptively fetch and store for use in the current context.
-     *
-     * 
      *
      * @see https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload
      */
@@ -601,16 +499,12 @@ interface Relations
     /**
      * Refers to a resource that can be used to monitor changes in an HTTP resource. 
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5989
      */
     const REL_MONITOR = 'monitor';
 
     /**
      * Refers to a resource that can be used to monitor changes in a specified group of HTTP resources. 
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc5989
      */
@@ -619,8 +513,6 @@ interface Relations
     /**
      * Indicates that the link's context is a part of a series, and that the next in the series is the link target. 
      *
-     * 
-     *
      * @see http://www.w3.org/TR/html5/links.html#link-type-next
      */
     const REL_NEXT = 'next';
@@ -628,16 +520,12 @@ interface Relations
     /**
      * Refers to the immediately following archive resource.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5005
      */
     const REL_NEXT_ARCHIVE = 'next-archive';
 
     /**
      * Indicates that the context’s original author or publisher does not endorse the link target.
-     *
-     * 
      *
      * @see http://www.w3.org/TR/html5/links.html#link-type-nofollow
      */
@@ -647,16 +535,12 @@ interface Relations
      * Indicates that any newly created top-level browsing context which results from following the link will not be an
      * auxiliary browsing context.
      *
-     * 
-     *
      * @see https://html.spec.whatwg.org/multipage/links.html#link-type-noopener
      */
     const REL_NOOPENER = 'noopener';
 
     /**
      * Indicates that no referrer information is to be leaked when following the link.
-     *
-     * 
      *
      * @see http://www.w3.org/TR/html5/links.html#link-type-noreferrer
      */
@@ -666,8 +550,6 @@ interface Relations
      * Indicates that any newly created top-level browsing context which results from following the link will be an auxiliary
      * browsing context.
      *
-     * 
-     *
      * @see https://html.spec.whatwg.org/multipage/links.html#link-type-opener
      */
     const REL_OPENER = 'opener';
@@ -676,16 +558,12 @@ interface Relations
      * Refers to an OpenID Authentication server on which the context relies for an assertion that the end user controls an
      * Identifier.
      *
-     * 
-     *
      * @see https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3
      */
     const REL_OPENID2_LOCAL_ID = 'openid2.local_id';
 
     /**
      * Refers to a resource which accepts OpenID Authentication protocol messages for the context.
-     *
-     * 
      *
      * @see https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3
      */
@@ -703,8 +581,6 @@ interface Relations
 
     /**
      * Refers to a P3P privacy policy for the context.
-     *
-     * 
      *
      * @see https://www.w3.org/TR/P3P/#syntax_link
      */
@@ -729,8 +605,6 @@ interface Relations
     /**
      * Gives the address of the pingback resource for the link context.
      *
-     * 
-     *
      * @see http://www.hixie.ch/specs/pingback/pingback
      */
     const REL_PINGBACK = 'pingback';
@@ -740,16 +614,12 @@ interface Relations
      * connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation, allows the user agent to mask
      * the high latency costs of establishing a connection.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/resource-hints/
      */
     const REL_PRECONNECT = 'preconnect';
 
     /**
      * Points to a resource containing the predecessor version in the version history. 
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc5829
      */
@@ -759,8 +629,6 @@ interface Relations
      * The prefetch link relation type is used to identify a resource that might be required by the next navigation from the
      * link context, and that the user agent ought to fetch, such that the user agent can deliver a faster response once the
      * resource is requested in the future.
-     *
-     * 
      *
      * @see http://www.w3.org/TR/resource-hints/
      */
@@ -780,16 +648,12 @@ interface Relations
      * ought to fetch and execute, such that the user agent can deliver a faster response once the resource is requested in the
      * future.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/resource-hints/
      */
     const REL_PRERENDER = 'prerender';
 
     /**
      * Indicates that the link's context is a part of a series, and that the previous in the series is the link target. 
-     *
-     * 
      *
      * @see http://www.w3.org/TR/html5/links.html#link-type-prev
      */
@@ -798,16 +662,12 @@ interface Relations
     /**
      * Refers to a resource that provides a preview of the link's context.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc6903
      */
     const REL_PREVIEW = 'preview';
 
     /**
      * Refers to the previous resource in an ordered series of resources. Synonym for "prev".
-     *
-     * 
      *
      * @see https://www.w3.org/TR/html401/
      */
@@ -816,16 +676,12 @@ interface Relations
     /**
      * Refers to the immediately preceding archive resource.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5005
      */
     const REL_PREV_ARCHIVE = 'prev-archive';
 
     /**
      * Refers to a privacy policy associated with the link's context.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc6903
      */
@@ -847,8 +703,6 @@ interface Relations
     /**
      * Identifies a related resource.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc4287
      */
     const REL_RELATED = 'related';
@@ -858,16 +712,12 @@ interface Relations
      * API defined in RFC8040. Subsequent revisions of RESTCONF will use alternate relation values to support protocol
      * versioning.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc8040
      */
     const REL_RESTCONF = 'restconf';
 
     /**
      * Identifies a resource that is a reply to the context of the link. 
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc4685
      */
@@ -876,8 +726,6 @@ interface Relations
     /**
      * Refers to a resource that can be used to search through the link's context and related resources.
      *
-     * 
-     *
      * @see http://www.opensearch.org/Specifications/OpenSearch/1.1
      */
     const REL_SEARCH = 'search';
@@ -885,16 +733,12 @@ interface Relations
     /**
      * Refers to a section in a collection of resources.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/html401/
      */
     const REL_SECTION = 'section';
 
     /**
      * Conveys an identifier for the link's context. 
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc4287
      */
@@ -913,16 +757,12 @@ interface Relations
     /**
      * Identifies service description for the context that is primarily intended for consumption by machines.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc8631
      */
     const REL_SERVICE_DESC = 'service-desc';
 
     /**
      * Identifies service documentation for the context that is primarily intended for human consumption.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc8631
      */
@@ -931,16 +771,12 @@ interface Relations
     /**
      * Identifies general metadata for the context that is primarily intended for consumption by machines.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc8631
      */
     const REL_SERVICE_META = 'service-meta';
 
     /**
      * Refers to a resource that is within a context that is sponsored (such as advertising or another compensation agreement).
-     *
-     * 
      *
      * @see https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html
      */
@@ -949,16 +785,12 @@ interface Relations
     /**
      * Refers to the first resource in a collection of resources.
      *
-     * 
-     *
      * @see https://www.w3.org/TR/html401
      */
     const REL_START = 'start';
 
     /**
      * Identifies a resource that represents the context's status.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc8631
      */
@@ -967,16 +799,12 @@ interface Relations
     /**
      * Refers to a stylesheet.
      *
-     * 
-     *
      * @see http://www.w3.org/TR/html5/links.html#link-type-stylesheet
      */
     const REL_STYLESHEET = 'stylesheet';
 
     /**
      * Refers to a resource serving as a subsection in a collection of resources.
-     *
-     * 
      *
      * @see https://www.w3.org/TR/html401/
      */
@@ -985,16 +813,12 @@ interface Relations
     /**
      * Points to a resource containing the successor version in the version history. 
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5829
      */
     const REL_SUCCESSOR_VERSION = 'successor-version';
 
     /**
      * Identifies a resource that provides information about the context's retirement policy. 
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc8594
      */
@@ -1003,16 +827,12 @@ interface Relations
     /**
      * Gives a tag (identified by the given address) that applies to the current document. 
      *
-     * 
-     *
      * @see http://www.w3.org/TR/html5/links.html#link-type-tag
      */
     const REL_TAG = 'tag';
 
     /**
      * Refers to the terms of service associated with the link's context.
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc6903
      */
@@ -1041,16 +861,12 @@ interface Relations
     /**
      * Refers to a resource identifying the abstract semantic type of which the link's context is considered to be an instance.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc6903
      */
     const REL_TYPE = 'type';
 
     /**
      * Refers to a resource that is within a context that is User Generated Content. 
-     *
-     * 
      *
      * @see https://webmasters.googleblog.com/2019/09/evolving-nofollow-new-ways-to-identify.html
      */
@@ -1068,16 +884,12 @@ interface Relations
     /**
      * Points to a resource containing the version history for the context. 
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5829
      */
     const REL_VERSION_HISTORY = 'version-history';
 
     /**
      * Identifies a resource that is the source of the information in the link's context. 
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc4287
      */
@@ -1097,16 +909,12 @@ interface Relations
     /**
      * Points to a working copy for this resource.
      *
-     * 
-     *
      * @see https://tools.ietf.org/html/rfc5829
      */
     const REL_WORKING_COPY = 'working-copy';
 
     /**
      * Points to the versioned resource from which this working copy was obtained. 
-     *
-     * 
      *
      * @see https://tools.ietf.org/html/rfc5829
      */
