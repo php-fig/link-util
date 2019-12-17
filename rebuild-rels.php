@@ -4,32 +4,48 @@ declare(strict_types=1);
 
 namespace Fig\Link\Builder;
 
-// Download this file from https://www.iana.org/assignments/link-relations/link-relations.xml
-// It cannot be auto-downloaded by the script because IANA has scripts blocked from accessing it.
-// I cannot fathom how that makes any sense whatsoever.
-const REGISTRY_FILE = 'link-relations.xml';
+const REGISTRY_FILE = 'https://www.iana.org/assignments/link-relations/link-relations.xml';
 
 run();
 
 function run() {
     $compiler = new RegistryCompiler();
 
+    $records = new Records();
     $out = fopen('src/Relations.php', 'w');
-    $compiler->compile(getRecords(), $out);
+    $compiler->compile($records(), $out);
 }
 
-/**
- * Fetches the records for the relation registry.
- *
- * @return iterable<\SimpleXMLElement>
- */
-function getRecords()
+class Records
 {
-    $registry = simplexml_load_file(REGISTRY_FILE);
 
-    foreach ($registry->registry->children() as $element) {
-        if ($element->getName() == 'record') {
-            yield $element;
+    /**
+     * Loads the XML object from the remote source.
+     *
+     * IANA requires a valid User-Agent string for all requests, and non-curl stream options for PHP seem to all
+     * fail at sending a User-Agent, even when told to.  So we use the ugly way.
+     */
+    protected function getXml(): \SimpleXMLElement
+    {
+        $ch = curl_init(REGISTRY_FILE);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'php-fig/fig-utils');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $xml = curl_exec($ch);
+
+        return simplexml_load_string($xml);
+    }
+
+    /**
+     * Fetches the records for the relation registry.
+     *
+     * @return iterable<\SimpleXMLElement>
+     */
+    public function __invoke()
+    {
+        foreach ($this->getXml()->registry->children() as $element) {
+            if ($element->getName() == 'record') {
+                yield $element;
+            }
         }
     }
 }
@@ -43,7 +59,7 @@ class RegistryCompiler
      * Writes a Relations index class based on the provided records.
      *
      * @param iterable<\SimpleXMLElement> $records
-     *   An iterable of SimpleXml elements from the Link Relations XML file.
+     *   An itrable of SimpleXml elements from the Link Relations XML file.
      * @param $stream
      *   An open file stream to which to write the generated code.
      * @param string $class
