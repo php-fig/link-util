@@ -59,7 +59,7 @@ class RegistryCompiler
      * Writes a Relations index class based on the provided records.
      *
      * @param iterable<\SimpleXMLElement> $records
-     *   An itrable of SimpleXml elements from the Link Relations XML file.
+     *   An iterable of SimpleXml elements from the Link Relations XML file.
      * @param $stream
      *   An open file stream to which to write the generated code.
      * @param string $class
