@@ -7,4 +7,8 @@
 /.travis.yml        export-ignore
 /phpunit.xml.dist   export-ignore
 /.scrutinizer.yml   export-ignore
-/tests              export-ignore
+/test               export-ignore
+/phpcs.xml          export-ignore
+/.editorconfig      export-ignore
+/README.md          export-ignore
+/rebuild-rels.php   export-ignore
