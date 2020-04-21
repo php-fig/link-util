@@ -896,7 +896,7 @@ interface Relations
     const REL_VIA = 'via';
 
     /**
-     * Identifies a target URI that supports the Webmention protcol. This allows clients that mention a resource in some form
+     * Identifies a target URI that supports the Webmention protocol. This allows clients that mention a resource in some form
      * of publishing process to contact that endpoint and inform it that this resource has been mentioned.
      *
      * This is a similar "Linkback" mechanism to the ones of Refback, Trackback, and Pingback. It uses a different protocol,
