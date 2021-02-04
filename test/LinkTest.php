@@ -3,8 +3,9 @@
 namespace Fig\Link\Tests;
 
 use Fig\Link\Link;
+use PHPUnit\Framework\TestCase;
 
-class LinkTest extends \PHPUnit_Framework_TestCase
+class LinkTest extends TestCase
 {
 
     public function test_can_set_and_retrieve_values()

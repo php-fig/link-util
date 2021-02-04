@@ -26,7 +26,7 @@ trait LinkProviderTrait
     /**
      * {@inheritdoc}
      */
-    public function getLinks()
+    public function getLinks(): iterable
     {
         return $this->links;
     }
@@ -34,7 +34,7 @@ trait LinkProviderTrait
     /**
      * {@inheritdoc}
      */
-    public function getLinksByRel($rel)
+    public function getLinksByRel($rel): iterable
     {
         $filter = function (LinkInterface $link) use ($rel) {
             return in_array($rel, $link->getRels());

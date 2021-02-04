@@ -17,7 +17,7 @@ trait EvolvableLinkProviderTrait
     /**
      * {@inheritdoc}
      */
-    public function withLink(LinkInterface $link)
+    public function withLink(LinkInterface $link): static
     {
         $that = clone($this);
         $splosh = spl_object_hash($link);
@@ -30,7 +30,7 @@ trait EvolvableLinkProviderTrait
     /**
      * {@inheritdoc}
      */
-    public function withoutLink(LinkInterface $link)
+    public function withoutLink(LinkInterface $link): static
     {
         $that = clone($this);
         $splosh = spl_object_hash($link);

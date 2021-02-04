@@ -16,7 +16,7 @@ trait TemplatedHrefTrait
      * @return bool
      *   True if the specified href is a templated path, False otherwise.
      */
-    private function hrefIsTemplated($href)
+    private function hrefIsTemplated(string $href): bool
     {
         return strpos($href, '{') !== false ||strpos($href, '}') !== false;
     }

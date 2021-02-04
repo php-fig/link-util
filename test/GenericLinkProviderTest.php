@@ -5,8 +5,9 @@ namespace Fig\Link\Tests;
 
 use Fig\Link\GenericLinkProvider;
 use Fig\Link\Link;
+use PHPUnit\Framework\TestCase;
 
-class GenericLinkProviderTest extends \PHPUnit_Framework_TestCase
+class GenericLinkProviderTest extends TestCase
 {
 
     public function test_can_add_links_by_method()
