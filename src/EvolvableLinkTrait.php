@@ -25,7 +25,7 @@ trait EvolvableLinkTrait
         $that = clone($this);
         $that->href = $href;
 
-        $that->templated = ($this->hrefIsTemplated($href));
+        $that->templated = $this->hrefIsTemplated($href);
 
         return $that;
     }

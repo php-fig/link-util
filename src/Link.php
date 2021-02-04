@@ -17,7 +17,7 @@ class Link implements EvolvableLinkInterface
      * @param string $href
      *   An href for this link.
      */
-    public function __construct($rel = '', $href = '')
+    public function __construct(string $rel = '', string $href = '')
     {
         if ($rel) {
             $this->rel[$rel] = true;

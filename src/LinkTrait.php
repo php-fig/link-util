@@ -13,12 +13,7 @@ trait LinkTrait
 {
     use TemplatedHrefTrait;
 
-    /**
-     *
-     *
-     * @var string
-     */
-    private $href = '';
+    private string $href = '';
 
     /**
      * The set of rels on this link.
@@ -30,14 +25,9 @@ trait LinkTrait
      *
      * @var string[]
      */
-    private $rel = [];
+    private array $rel = [];
 
-    /**
-     *
-     *
-     * @var string
-     */
-    private $attributes = [];
+    private array $attributes = [];
 
     /**
      * {@inheritdoc}

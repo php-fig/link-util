@@ -18,6 +18,6 @@ trait TemplatedHrefTrait
      */
     private function hrefIsTemplated(string $href): bool
     {
-        return strpos($href, '{') !== false ||strpos($href, '}') !== false;
+        return str_contains($href, '{') || str_contains($href, '}');
     }
 }
