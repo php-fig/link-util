@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 class LinkTest extends TestCase
 {
 
-    public function test_can_set_and_retrieve_values()
+    public function test_can_set_and_retrieve_values(): void
     {
         $link = (new Link())
             ->withHref('http://www.google.com')
@@ -22,7 +22,7 @@ class LinkTest extends TestCase
         $this->assertEquals('you', $link->getAttributes()['me']);
     }
 
-    public function test_can_remove_values()
+    public function test_can_remove_values(): void
     {
         $link = (new Link())
             ->withHref('http://www.google.com')
@@ -38,7 +38,7 @@ class LinkTest extends TestCase
         $this->assertFalse(array_key_exists('me', $link->getAttributes()));
     }
 
-    public function test_multiple_rels()
+    public function test_multiple_rels(): void
     {
         $link = (new Link())
             ->withHref('http://www.google.com')
@@ -50,7 +50,7 @@ class LinkTest extends TestCase
         $this->assertContains('reference', $link->getRels());
     }
 
-    public function test_constructor()
+    public function test_constructor(): void
     {
         $link = new Link('next', 'http://www.google.com');
 

@@ -10,7 +10,7 @@ use PHPUnit\Framework\TestCase;
 class GenericLinkProviderTest extends TestCase
 {
 
-    public function test_can_add_links_by_method()
+    public function test_can_add_links_by_method(): void
     {
         $link = (new Link())
             ->withHref('http://www.google.com')
@@ -25,7 +25,7 @@ class GenericLinkProviderTest extends TestCase
     }
 
 
-    public function test_can_add_links_by_constructor()
+    public function test_can_add_links_by_constructor(): void
     {
         $link = (new Link())
             ->withHref('http://www.google.com')
@@ -39,7 +39,7 @@ class GenericLinkProviderTest extends TestCase
         $this->assertContains($link, $provider->getLinks());
     }
 
-    public function test_can_get_links_by_rel()
+    public function test_can_get_links_by_rel(): void
     {
         $link1 = (new Link())
             ->withHref('http://www.google.com')
@@ -61,7 +61,7 @@ class GenericLinkProviderTest extends TestCase
         $this->assertFalse(in_array($link1, $links));
     }
 
-    public function test_can_remove_links()
+    public function test_can_remove_links(): void
     {
         $link = (new Link())
             ->withHref('http://www.google.com')
