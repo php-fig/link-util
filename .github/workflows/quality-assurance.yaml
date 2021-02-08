@@ -1,0 +1,24 @@
+---
+name: Quality Assurance
+on:
+    push: ~
+    pull_request: ~
+
+jobs:
+    phpunit:
+        name: PHPUnit tests on ${{ matrix.php }} ${{ matrix.composer-flags }}
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                php: [ '8.0' ]
+                composer-flags: [ '' ]
+                phpunit-flags: [ '--coverage-text' ]
+        steps:
+            - uses: actions/checkout@v2
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: ${{ matrix.php }}
+                  coverage: xdebug
+                  tools: composer:v2
+            - run: composer update --no-progress ${{ matrix.composer-flags }}
+            - run: vendor/bin/phpunit ${{ matrix.phpunit-flags }}

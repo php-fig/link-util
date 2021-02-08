@@ -5,9 +5,10 @@ namespace Fig\Link\Tests;
 
 
 use Fig\Link\Link;
+use PHPUnit\Framework\TestCase;
 
-class TemplatedHrefTraitTest extends \PHPUnit_Framework_TestCase {
-
+class TemplatedHrefTraitTest extends TestCase
+{
     /**
      *
      * @dataProvider templatedHrefProvider
@@ -15,7 +16,7 @@ class TemplatedHrefTraitTest extends \PHPUnit_Framework_TestCase {
      * @param string $href
      *   The href to check.
      */
-    public function test_templated($href)
+    public function test_templated(string $href): void
     {
         $link = (new Link())
             ->withHref($href);
@@ -30,7 +31,7 @@ class TemplatedHrefTraitTest extends \PHPUnit_Framework_TestCase {
      * @param string $href
      *   The href to check.
      */
-    public function test_not_templated($href)
+    public function test_not_templated(string $href): void
     {
         $link = (new Link())
             ->withHref($href);
@@ -38,7 +39,7 @@ class TemplatedHrefTraitTest extends \PHPUnit_Framework_TestCase {
         $this->assertFalse($link->isTemplated());
     }
 
-    public function templatedHrefProvider()
+    public function templatedHrefProvider(): iterable
     {
         return [
             ['http://www.google.com/{param}/foo'],
@@ -46,7 +47,7 @@ class TemplatedHrefTraitTest extends \PHPUnit_Framework_TestCase {
         ];
     }
 
-    public function notTemplatedHrefProvider()
+    public function notTemplatedHrefProvider(): iterable
     {
         return [
             ['http://www.google.com/foo'],

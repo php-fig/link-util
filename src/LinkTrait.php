@@ -13,12 +13,7 @@ trait LinkTrait
 {
     use TemplatedHrefTrait;
 
-    /**
-     *
-     *
-     * @var string
-     */
-    private $href = '';
+    private string $href = '';
 
     /**
      * The set of rels on this link.
@@ -30,19 +25,14 @@ trait LinkTrait
      *
      * @var string[]
      */
-    private $rel = [];
+    private array $rel = [];
 
-    /**
-     *
-     *
-     * @var string
-     */
-    private $attributes = [];
+    private array $attributes = [];
 
     /**
      * {@inheritdoc}
      */
-    public function getHref()
+    public function getHref(): string
     {
         return $this->href;
     }
@@ -50,7 +40,7 @@ trait LinkTrait
     /**
      * {@inheritdoc}
      */
-    public function isTemplated()
+    public function isTemplated(): bool
     {
         return $this->hrefIsTemplated($this->href);
     }
@@ -58,7 +48,7 @@ trait LinkTrait
     /**
      * {@inheritdoc}
      */
-    public function getRels()
+    public function getRels(): array
     {
         return array_keys($this->rel);
     }
@@ -66,7 +56,7 @@ trait LinkTrait
     /**
      * {@inheritdoc}
      */
-    public function getAttributes()
+    public function getAttributes(): array
     {
         return $this->attributes;
     }
