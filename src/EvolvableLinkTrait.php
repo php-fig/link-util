@@ -61,7 +61,7 @@ trait EvolvableLinkTrait
      *
      * @return EvolvableLinkInterface
      */
-    public function withAttribute(string $attribute, string $value): static
+    public function withAttribute(string $attribute, string|\Stringable|int|float|bool|array $value): static
     {
         /** @var EvolvableLinkInterface $that */
         $that = clone($this);
